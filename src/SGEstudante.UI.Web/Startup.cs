@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using SGEstudante.UI.Web.Data;
 using SGEstudante.UI.Web.Models;
 using SGEstudante.UI.Web.Services;
+using SGEstudante.Infrastructure.Data;
 
 namespace SGEstudante.UI.Web
 {
@@ -32,6 +33,9 @@ namespace SGEstudante.UI.Web
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+
+            services.AddDbContext<EstudanteContext>(Options =>
+                Options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();

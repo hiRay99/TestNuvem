@@ -12,8 +12,11 @@ namespace SGEstudante.ApplicationCore.Entity
         }
 
         public int EstudanteId { get; set; }
+
         public String Nome { get; set; }
+
         public String Email { get; set; }
+
         public int Incricao { get; set; }
        
     }
