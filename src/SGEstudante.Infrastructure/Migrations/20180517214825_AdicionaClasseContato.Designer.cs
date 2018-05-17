@@ -11,9 +11,10 @@ using System;
 namespace SGEstudante.Infrastructure.Migrations
 {
     [DbContext(typeof(EstudanteContext))]
-    partial class EstudanteContextModelSnapshot : ModelSnapshot
+    [Migration("20180517214825_AdicionaClasseContato")]
+    partial class AdicionaClasseContato
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -14,10 +14,16 @@ namespace SGEstudante.Infrastructure.Data
         }
 
         public DbSet <Estudante> Estudantes { get; set; }
+        public DbSet<Contato> Contatos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Estudante>().ToTable("Estudante");
+            modelBuilder.Entity<Contato>().ToTable("Contato");
+
+            modelBuilder.Entity<Estudante>().Property(e => e.CPF)
+            .HasColumnType("varchar(11)")
+            .IsRequired();
         }
     }
 }
