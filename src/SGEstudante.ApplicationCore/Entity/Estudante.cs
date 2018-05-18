@@ -17,7 +17,7 @@ namespace SGEstudante.ApplicationCore.Entity
 
         public String CPF{ get; set; }
 
-        public int Incricao { get; set; }
+        public int Inscricao { get; set; }
         
         public ICollection<Contato> Contatos { get; set; }
     }

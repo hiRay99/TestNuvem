@@ -11,9 +11,10 @@ using System;
 namespace SGEstudante.Infrastructure.Migrations
 {
     [DbContext(typeof(EstudanteContext))]
-    partial class EstudanteContextModelSnapshot : ModelSnapshot
+    [Migration("20180518175933_ConfiguraClasseEstudanteContato")]
+    partial class ConfiguraClasseEstudanteContato
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -54,8 +55,7 @@ namespace SGEstudante.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(11)");
 
-                    b.Property<int>("Inscricao")
-                        .HasColumnType("varchar(8)");
+                    b.Property<int>("Incricao");
 
                     b.Property<string>("Nome")
                         .IsRequired()

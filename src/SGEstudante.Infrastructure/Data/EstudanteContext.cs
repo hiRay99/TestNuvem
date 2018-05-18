@@ -31,6 +31,10 @@ namespace SGEstudante.Infrastructure.Data
             .HasColumnType("varchar(200)")
             .IsRequired();
 
+            modelBuilder.Entity<Estudante>().Property(e => e.Inscricao)
+            .HasColumnType("varchar(8)")
+            .IsRequired();
+
             #endregion
 
             #region Configuração de Contato
@@ -49,6 +53,6 @@ namespace SGEstudante.Infrastructure.Data
             #endregion
         }
     }
-    }
-    }
 }
+    
+
