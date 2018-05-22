@@ -14,7 +14,8 @@ namespace SGEstudante.Infrastructure.Data
         }
 
         public DbSet <Estudante> Estudantes { get; set; }
-        public DbSet<Contato> Contatos { get; set; }
+
+        public DbSet <Contato> Contatos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
