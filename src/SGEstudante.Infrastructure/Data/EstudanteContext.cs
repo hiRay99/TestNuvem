@@ -52,6 +52,26 @@ namespace SGEstudante.Infrastructure.Data
             .HasColumnType("varchar(15)");
 
             #endregion
+
+            #region Configuração de Cursocv
+
+            modelBuilder.Entity<Curso>().Property(c => e.Nome)
+            .HasColumnType("varchar(400)")
+            .IsRequired();
+
+            modelBuilder.Entity<Curso>().Property(c => e.Codigo)
+            .HasColumnType("varchar(10)")
+            .IsRequired();
+
+            modelBuilder.Entity<Curso>().Property(c => e.Descricao)
+            .HasColumnType("varchar(1000)")
+            .IsRequired();
+
+            #endregion
+
+            #region Configuração de Endereço
+
+            #endregion
         }
     }
 }

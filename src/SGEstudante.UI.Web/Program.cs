@@ -28,7 +28,7 @@ namespace SGEstudante.UI.Web
                 }
                 catch (Exception ex)
                 {
-                    9var logger = services.GetRequiredService<Logger<Program>>();
+                    var logger = services.GetRequiredService<Logger<Program>>();
                     logger.LogError(ex, "Um erro ocorreu no método seeding do contexto. ");
                 }
             }

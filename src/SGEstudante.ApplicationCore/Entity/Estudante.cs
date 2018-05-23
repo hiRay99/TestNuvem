@@ -20,5 +20,9 @@ namespace SGEstudante.ApplicationCore.Entity
         public int Inscricao { get; set; }
         
         public ICollection<Contato> Contatos { get; set; }
+
+        public Endereco Endereco { get; set; }
+
+        public ICollection<CursoEstudante> CursosEstudante { get; set; }
     }
 }
