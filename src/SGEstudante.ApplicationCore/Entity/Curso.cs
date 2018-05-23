@@ -19,5 +19,6 @@ namespace SGEstudante.ApplicationCore.Entity
         public string Codigo { get; set; }
 
         public ICollection<CursoEstudante> CursosEstudante { get; set; }
+
     }
 }

@@ -8,6 +8,8 @@ namespace SGEstudante.Infrastructure.Data
 {
     public class EstudanteContext : DbContext
     {
+        private object e;
+
         public EstudanteContext(DbContextOptions<EstudanteContext> options) : base(options)
         {
                 
@@ -53,17 +55,17 @@ namespace SGEstudante.Infrastructure.Data
 
             #endregion
 
-            #region Configuração de Cursocv
+            #region Configuração de Curso
 
-            modelBuilder.Entity<Curso>().Property(c => e.Nome)
+            modelBuilder.Entity<Curso>().Property(e => e.Materia)
             .HasColumnType("varchar(400)")
             .IsRequired();
 
-            modelBuilder.Entity<Curso>().Property(c => e.Codigo)
+            modelBuilder.Entity<Curso>().Property(e => e.Codigo)
             .HasColumnType("varchar(10)")
             .IsRequired();
 
-            modelBuilder.Entity<Curso>().Property(c => e.Descricao)
+            modelBuilder.Entity<Curso>().Property(e => e.Descricao)
             .HasColumnType("varchar(1000)")
             .IsRequired();
 
