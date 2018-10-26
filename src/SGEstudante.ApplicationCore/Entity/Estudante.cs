@@ -13,7 +13,7 @@ namespace SGEstudante.ApplicationCore.Entity
 
         public int EstudanteId { get; set; }
 
-        public String Nomes { get; set; }
+        public String Nome { get; set; }
 
         public String CPF{ get; set; }
 
