@@ -11,17 +11,15 @@ namespace SGEstudante.ApplicationCore.Entity
 
         }
 
-        public int EstudanteId { get; set; }
+        public int LancheId { get; set; }
 
         public String Nome { get; set; }
 
-        public String CPF{ get; set; }
-
-        public int Inscricao { get; set; }
+        public Decimal Valor{ get; set; }
 
         public Endereco Endereco { get; set; }
 
-        public ICollection<Contato> Contatos { get; set; }
+        public ICollection<QuantidadeLanche> QuantidadeLanche { get; set; }
         
         public ICollection<CursoEstudante> CursosEstudante { get; set; }
         
