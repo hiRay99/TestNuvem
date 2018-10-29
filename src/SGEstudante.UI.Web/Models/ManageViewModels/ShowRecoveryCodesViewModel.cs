@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SGEstudante.UI.Web.Models.ManageViewModels
+namespace SGL.UI.Web.Models.ManageViewModels
 {
     public class ShowRecoveryCodesViewModel
     {

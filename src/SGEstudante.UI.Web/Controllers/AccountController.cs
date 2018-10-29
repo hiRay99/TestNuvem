@@ -10,11 +10,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using SGEstudante.UI.Web.Models;
-using SGEstudante.UI.Web.Models.AccountViewModels;
-using SGEstudante.UI.Web.Services;
+using SGL.UI.Web.Models;
+using SGL.UI.Web.Models.AccountViewModels;
+using SGL.UI.Web.Services;
 
-namespace SGEstudante.UI.Web.Controllers
+namespace SGL.UI.Web.Controllers
 {
     [Authorize]
     [Route("[controller]/[action]")]

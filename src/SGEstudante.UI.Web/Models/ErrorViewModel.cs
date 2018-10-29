@@ -1,6 +1,6 @@
 using System;
 
-namespace SGEstudante.UI.Web.Models
+namespace SGL.UI.Web.Models
 {
     public class ErrorViewModel
     {

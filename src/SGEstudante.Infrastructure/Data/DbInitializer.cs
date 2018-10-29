@@ -2,62 +2,65 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-using SGEstudante.ApplicationCore.Entity;
+using SGL.ApplicationCore.Entity;
 
-namespace SGEstudante.Infrastructure.Data
+namespace SGL.Infrastructure.Data
 {
     public static class DbInitializer
     {
-        public static void Initiatize(EstudanteContext context)
+        public static void Initiatize(LanchoneteContext context)
         {
-            if (context.Estudantes.Any())
+            if (context.Pedidos.Any())
             {
                 return;
             }
 
-            var Estudantes = new Estudante[]
+            var Estudantes = new Pedido[]
             {
-                new Estudante
+                new Pedido
                 {
-                     Nome = "Rayane Ribeiro",
-                     CPF = "84833826100"
+                     Nome = "Pedido 01",
+                     TipoLanche = "X-Bacon",
+                     Valor = "R$ 5,00"
+
                 },
 
 
-                new Estudante
+                new Pedido
                 {
-                    Nome = "Rayane Fernandes",
-                    CPF = "47275602911"
+                    Nome = "Pedido 02",
+                    TipoLanche = "Cacho-quente",
+                    Valor = "R$ 3,00"
+                },
+
+                new Pedido
+                {
+                    Nome = "Pedido 03",
+                    TipoLanche = "X-Salada",
+                    Valor = "R$ 2,50"
+                },
+
+                new Pedido
+                {
+                    Nome = "Pedido 04",
+                    TipoLanche = "Torrada simples",
+                    Valor = "R$ 4,50"
+                },
+
+                 new Pedido
+                {
+                    Nome = "Pedido 05",
+                    TipoLanche = "Refrigerante",
+                    Valor = "R$ 1,50"
                 }
             };
 
             context.AddRange(Estudantes);
 
-            var contatos = new Contato[]
-            {
-                new Contato
-                {
-                    Nome ="Contato 1 ",
-                    Telefone = "999999999",
-                    Email = "email_contato1@gmail.com",
-                    Estudante = Estudantes[0]
-                },
-
-                new Contato
-                {
-                    Nome ="Contato 2 ",
-                    Telefone = "888888888",
-                    Email = "email_contato2@gmail.com",
-                    Estudante = Estudantes[1]
-                }
-            };
-
-            context.AddRange(contatos);
-
             context.SaveChanges();
         }
 
-        public static void Initialize(EstudanteContext context)
+        public static void Initialize(LanchoneteContext context)
         {
             throw new NotImplementedException();
         }

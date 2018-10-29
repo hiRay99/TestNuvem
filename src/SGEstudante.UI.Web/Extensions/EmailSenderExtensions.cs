@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
-using SGEstudante.UI.Web.Services;
+using SGL.UI.Web.Services;
 
-namespace SGEstudante.UI.Web.Services
+namespace SGL.UI.Web.Services
 {
     public static class EmailSenderExtensions
     {

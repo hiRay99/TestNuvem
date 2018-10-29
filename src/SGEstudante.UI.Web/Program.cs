@@ -8,9 +8,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using SGEstudante.Infrastructure.Data;
+using SGL.Infrastructure.Data;
 
-namespace SGEstudante.UI.Web
+namespace SGL.UI.Web
 {
     public class Program
     {
@@ -23,7 +23,7 @@ namespace SGEstudante.UI.Web
                 var services = scope.ServiceProvider;
                 try
                 {
-                    var context = services.GetRequiredService<EstudanteContext>();
+                    var context = services.GetRequiredService<LanchoneteContext>();
                     DbInitializer.Initialize(context);
                 }
                 catch (Exception ex)

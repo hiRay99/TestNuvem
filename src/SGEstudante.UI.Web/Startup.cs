@@ -8,12 +8,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using SGEstudante.UI.Web.Data;
-using SGEstudante.UI.Web.Models;
-using SGEstudante.UI.Web.Services;
-using SGEstudante.Infrastructure.Data;
+using SGL.UI.Web.Data;
+using SGL.UI.Web.Models;
+using SGL.UI.Web.Services;
+using SGL.Infrastructure.Data;
 
-namespace SGEstudante.UI.Web
+namespace SGL.UI.Web
 {
     public class Startup
     {
@@ -34,7 +34,7 @@ namespace SGEstudante.UI.Web
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
-            services.AddDbContext<EstudanteContext>(Options =>
+            services.AddDbContext<LanchoneteContext>(Options =>
                 Options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             // Add application services.

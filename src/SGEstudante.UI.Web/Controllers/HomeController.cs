@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using SGEstudante.UI.Web.Models;
+using SGL.UI.Web.Models;
 
-namespace SGEstudante.UI.Web.Controllers
+namespace SGL.UI.Web.Controllers
 {
     public class HomeController : Controller
     {

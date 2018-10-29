@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace SGEstudante.UI.Web.Models.ManageViewModels
+namespace SGL.UI.Web.Models.ManageViewModels
 {
     public class EnableAuthenticatorViewModel
     {

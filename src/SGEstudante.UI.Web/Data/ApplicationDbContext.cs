@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using SGEstudante.UI.Web.Models;
+using SGL.UI.Web.Models;
 
-namespace SGEstudante.UI.Web.Data
+namespace SGL.UI.Web.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

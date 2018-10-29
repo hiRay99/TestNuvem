@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using SGEstudante.UI.Web.Controllers;
+using SGL.UI.Web.Controllers;
 
 namespace Microsoft.AspNetCore.Mvc
 {

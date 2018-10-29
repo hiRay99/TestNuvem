@@ -9,11 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 -  Infrasctruture", "3 -  Infrasctruture", "{658D856B-F845-4749-BC95-059BBFF0F223}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGEstudante.ApplicationCore", "src\SGEstudante.ApplicationCore\SGEstudante.ApplicationCore.csproj", "{7F468E79-EA5C-47BD-99E0-D801581A2275}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SGL.ApplicationCore", "src\SGEstudante.ApplicationCore\SGL.ApplicationCore.csproj", "{7F468E79-EA5C-47BD-99E0-D801581A2275}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGEstudante.Infrastructure", "src\SGEstudante.Infrastructure\SGEstudante.Infrastructure.csproj", "{CA6574FB-940C-4A9E-8D06-D53CD09C3C28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SGL.Infrastructure", "src\SGEstudante.Infrastructure\SGL.Infrastructure.csproj", "{CA6574FB-940C-4A9E-8D06-D53CD09C3C28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGEstudante.UI.Web", "src\SGEstudante.UI.Web\SGEstudante.UI.Web.csproj", "{71774873-9256-457D-BEA0-9E6864A90B9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SGL.UI.Web", "src\SGEstudante.UI.Web\SGL.UI.Web.csproj", "{71774873-9256-457D-BEA0-9E6864A90B9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
